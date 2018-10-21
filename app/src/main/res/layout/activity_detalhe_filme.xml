@@ -3,11 +3,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
     tools:context=".DetalheFilme">
 
+    <!--<TextView-->
+        <!--android:id="@+id/txtFilme"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
     <TextView
-        android:id="@+id/txtFilme"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="@string/filme"
+        android:gravity="center"
+        android:textSize="@dimen/text_large"
+        android:layout_marginTop="25dp"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/colorPrimaryDark"
+        android:contentDescription="@string/filme"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp"
+        />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/direcao"
+            android:textSize="@dimen/fab_margin"
+            android:layout_marginTop="15dp"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descricao"
+        android:textSize="@dimen/fab_margin"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lancamento"
+        android:textSize="@dimen/fab_margin"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/popularidade"
+        android:textSize="@dimen/fab_margin"
+        android:layout_marginTop="15dp"/>
+
+
+
+
+
+
+
 
 </LinearLayout>
