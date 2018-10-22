@@ -1,14 +1,37 @@
 <resources>
 
-    <string name="app_name">pipoca</string>
-    <string name="btn_busca">Listar Filmes</string>
-    <string name="lblGenero">Gênero: </string>
+    <string name="app_name">Hora da Pipoca</string>
+    <string name="btn_busca">Buscar</string>
+    <string name="lblGenero">Gêneros: </string>
     <string-array name="generos">
         <item>Todos</item>
-        <item>Horror</item>
+        <item>Ação</item>
+        <item>Animação</item>
+        <item>Comédia</item>
+        <item>Crime</item>
+        <item>Documentário</item>
+        <item>Drama</item>
+        <item>Família</item>
         <item>Fantasia</item>
+        <item>História</item>
+        <item>Horror</item>
+        <item>Musical</item>
+        <item>Mistério</item>
+        <item>Romance</item>
+        <item>Ficção Científica</item>
+        <item>Filme para TV</item>
+        <item>Suspense</item>
+        <item>Guerra</item>
+        <item>Western</item>
     </string-array>
 
+    <string name="filme">1 - Blade Runner 2049</string>
+    <string name="direcao">Direção: Dennis Villeneuve</string>
+    <string name="descricao">Descrição: Que filmão legal, pena que tem 40 horas de filme</string>
+    <string name="lancamento">Lançamento: 04/10/2017</string>
+    <string name="popularidade">Popularidade: 100</string>
+
+    <!--<string name="nome">Nome: %s</string>-->
     <!--<string name="action_settings">Settings</string>-->
     <!--<string name="movie_name">Movie: %s</string>-->
     <!--<string name="genre">Genre: %s</string>-->

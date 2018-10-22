@@ -1,22 +1,42 @@
 package br.com.dennissiqueira.pipoca;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import br.com.dennissiqueira.pipoca.Filme;
+import br.com.dennissiqueira.pipoca.ListaFilmes;
+import br.com.dennissiqueira.pipoca.R;
+
 public class DetalheFilme extends AppCompatActivity {
+    TextView id, titulo, descricao, anoLancamento, popularidade, direcao, genero;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalhe_filme);
-        TextView txtFilme = (TextView)findViewById(R.id.txtFilme);
+
+        id = findViewById(R.id.txtId);
+        titulo = findViewById(R.id.txtTitulo);
+        descricao = findViewById(R.id.txtDescricao);
+        anoLancamento = findViewById(R.id.txtAnoLancamento);
+        popularidade = findViewById(R.id.txtPopularidade);
+        direcao = findViewById(R.id.txtDirecao);
+        genero = findViewById(R.id.txtGenero);
+
         Intent intent = getIntent();
-        Filme filme = (Filme)intent.getSerializableExtra(ListaFilmes.FILME);
-        txtFilme.setText(filme.toString());
+        String nomeFilme = intent.getStringExtra(ListaFilmes.FILME);
+
+        Filme filme = new Filme();
+        filme = filme.buscaFilme(nomeFilme);
+
+        id.setText(String.valueOf(filme.getId()));
+        titulo.setText(filme.getTitulo());
+        descricao.setText(filme.getDescricao());
+        anoLancamento.setText(filme.getAnoLancamento());
+        popularidade.setText(String.valueOf(filme.getPopularidade()));
+        direcao.setText(filme.getDirecao());
+        genero.setText(filme.getGenero().getNome());
     }
 }
